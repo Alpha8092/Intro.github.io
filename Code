@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science Theme Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Reset and general styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #004080;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 1em;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover, nav ul li a:focus, nav ul li a:active {
+            color: #add8e6;
+        }
+.button-container {
+  position: relative;
+  display: inline-block;
+}
+
+.button-85 {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-85:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.additional-button {
+  display: block;
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.additional-button:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.additional-button:hover:before {
+  opacity: 0.6;
+}
+
+.hidden {
+  display: none;
+}
+
+#additional-buttons.visible {
+  display: block;
+}
+
+        section {
+            padding: 2em;
+            margin: 2em auto;
+            max-width: 800px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #004080;
+        }
+
+        .project {
+            border: 1px solid #ddd;
+            padding: 1em;
+            margin-bottom: 1em;
+        }
+
+        .project h3 {
+            color: #004080;
+        }
+
+        .project p {
+            color: #666;
+        }
+
+        .project a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        .project a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="about">
+        <h1>Welcome to Science Theme Page</h1>
+        <p> This website by made by Sanatan Kumar and Aditya Sharma for Mukesh Sir</p>
+    </section>
+    <section id="skills">
+        <h2>MADE BY</h2>
+        <ul>
+            <li>SCIENCE BY <B>MUKESH SIR </B></li>
+            <li> <B> MADE BY SANATAN AND ADITYA</li>
+            <li>TEACHING BY MUSKESH SIR</li>
+            <li>Science SMART CLASSES</li>
+        </ul>
+    </section>
+    <section id="projects">
+        
+<div class="button-container">
+  <button id="main-button" class="button-85" role="button">Button 85</button>
+  <div id="additional-buttons" class="hidden">
+    <button class="additional-button">Ch-1 Crop Production</button>
+    <button class="additional-button">Management</button>
+  
+</div>
+
+        <!-- Add more projects as needed -->
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:sudarshankumar070309@gmail.com">sudarshankumar070309@gmail.com</a></p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Science By Mukesh Sir Made By Sanatan And Aditya</p>
+    </footer>
+</body>
+</html>
